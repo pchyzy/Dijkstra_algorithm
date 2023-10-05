@@ -1,0 +1,25 @@
+[INPUT]
+cvfile     = replica_{}.cv
+
+[OUTPUT]
+fenefile       = fene.dat
+weightfile     = {}.weight
+
+[MBAR]
+dimension          = 1
+num_replicas       = 24
+input_type         = US
+tolerance          = 10E-08
+temperature        = 310.15
+target_temperature = 310.15
+rest_function1     = 1
+output_unit = kcal/mol
+nblocks          = 1
+self_iteration   = 5
+Newton_iteration = 40
+
+[RESTRAINTS]
+constant1        = 3.0 4.00 5.00 5.25 5.00 4.30 3.25 3.50 2.50 1.60 1.60 2.00 2.00 1.80 1.60 1.10 1.10 0.90 0.80 0.70 0.60 0.45 0.45 0.45
+reference1       = 9.0 9.90 10.3 10.7 11.1 11.5 12.1 12.7 13.3 14.1 14.9 15.7 16.5 17.3 18.1 18.9 19.7 20.5 22.0 23.5 25.0 26.5 28.0 29.5
+is_periodic1     = NO
+

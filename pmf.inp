@@ -1,0 +1,21 @@
+[INPUT]
+weightfile     = {}.weight  # weight file
+cvfile         = replica_{}.cv
+ 
+[OUTPUT]
+pmffile        = pmf.dat      # potential of mean force file
+ 
+[OPTION]
+nreplica       = 24
+dimension      = 2
+temperature    = 310.15
+output_type    = GNUPLOT
+
+grids1         = 8.0 32.0 301   # (min max num_of_bins)
+band_width1    = 0.020 # sigma of Gaussian kernel
+is_periodic1   = NO
+
+grids2         = 1.0 13.5 301   # (min max num_of_bins)
+band_width2    = 0.020 # sigma of Gaussian kernel
+is_periodic2   = NO
+
